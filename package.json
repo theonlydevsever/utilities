@@ -7,6 +7,9 @@
   "repository": "https://github.com/theonlydevsever/utilities.git",
   "author": "Dylan O'Leary <dylanolearydev@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "check:code": "concurrently -n Linter,Prettier,Jest -c magenta,green,blue \"yarn lint\" \"yarn prettier\"",
