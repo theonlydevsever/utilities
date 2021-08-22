@@ -4,7 +4,10 @@
   "description": "A collection of small and helpful utility functions",
   "main": "dist/utilities.js",
   "types": "dist/utilities.d.ts",
-  "repository": "https://github.com/theonlydevsever/utilities.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theonlydevsever/utilities.git"
+  },
   "author": "Dylan O'Leary <dylanolearydev@gmail.com>",
   "license": "MIT",
   "files": [
