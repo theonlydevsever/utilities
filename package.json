@@ -1,6 +1,6 @@
 {
   "name": "@theonlydevsever/utilities",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A collection of small and helpful utility functions",
   "main": "dist/utilities.js",
   "types": "dist/utilities.d.ts",
