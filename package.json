@@ -1,6 +1,6 @@
 {
   "name": "@theonlydevsever/utilities",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "A collection of small and helpful utility functions",
   "main": "dist/utilities.js",
   "types": "dist/utilities.d.ts",
@@ -12,6 +12,11 @@
   "license": "MIT",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "utilities",
+    "util",
+    "utility"
   ],
   "scripts": {
     "build": "tsc",
