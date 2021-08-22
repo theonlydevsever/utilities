@@ -2,6 +2,7 @@
 
 ![test](https://github.com/theonlydevsever/utilities/actions/workflows/test.yml/badge.svg)
 ![publish](https://github.com/theonlydevsever/utilities/actions/workflows/publish.yml/badge.svg)
+![tag](https://github.com/theonlydevsever/utilities/actions/workflows/tag.yml/badge.svg)
 
 Small & helpful utility functions that everyone is tired of writing
 
