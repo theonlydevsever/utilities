@@ -1,0 +1,8 @@
+{
+  "includeVersion": true,
+  "entryPoints": ["src/utilities.ts"],
+  "exclude": ["**/node_modules/**", "*.test.ts"],
+  "name": "@theonlydevsever/utilities",
+  "readme": "./README.md",
+  "out": "docs"
+}
