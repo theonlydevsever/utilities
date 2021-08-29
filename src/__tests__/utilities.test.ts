@@ -1,4 +1,4 @@
-import { ExtendedPrimitiveTypes, forceArray, isValueOfType } from "../utilities";
+import { ExtendedPrimitiveType, forceArray, isValueOfType } from "../utilities";
 
 describe("Utilities Testing", () => {
     describe("forceArray", () => {
@@ -19,7 +19,7 @@ describe("Utilities Testing", () => {
     }); // close describe("forceArray")
 
     describe("isValueOfType", () => {
-        const allTypes: ExtendedPrimitiveTypes[] = [
+        const allTypes: ExtendedPrimitiveType[] = [
             "array",
             "bigint",
             "boolean",
