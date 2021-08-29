@@ -62,5 +62,7 @@ if (isValueOfType(func, "function")) {
 isValueOfType("Pong", "string"); // => true
 isValueOfType(42, "array"); // => false
 isValueOfType(BigInt(23456), "bigint"); // => true
-isValueOfType([1, 2, 3], "array"); // => false
+isValueOfType([1, 2, 3], "array"); // => true
+isValueOfType({ id: 1, name: "Bubbles" }, "object") // => true
+isValueOfType("function in disguise", "function") // => false
 ```
