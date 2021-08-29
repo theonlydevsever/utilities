@@ -1,6 +1,32 @@
-import { ExtendedPrimitiveType, forceArray, isValueOfType } from "../utilities";
+import { capitalize, ExtendedPrimitiveType, forceArray, isValueOfType } from "../utilities";
 
 describe("Utilities Testing", () => {
+    describe("capitalize", () => {
+        test("returns an empty string if nothing is passed", () => {
+            expect(capitalize()).toEqual("");
+        });
+
+        test("returns the expected value when an untrimmed string is passed", () => {
+            const arg = "  hello   ";
+            const expected = "Hello";
+
+            expect(capitalize(arg)).toEqual(expected);
+        });
+
+        [
+            { arg: "123", expected: "123" },
+            { arg: "__Yarp", expected: "__Yarp" },
+            { arg: "cereal", expected: "Cereal" },
+            { arg: "sOuTh PaRk", expected: "SOuTh PaRk" },
+            { arg: "roxy", expected: "Roxy" },
+            { arg: "   it's really spacious in here   ", expected: "It's really spacious in here" }
+        ].forEach(({ arg, expected }) => {
+            test(`returns '${expected}' when '${arg}' is passed`, () => {
+                expect(capitalize(arg)).toEqual(expected);
+            });
+        });
+    }); // close describe("capitalize")
+
     describe("forceArray", () => {
         test("returns an array if an array of values is passed", () => {
             const expected = [1, "Two", true];

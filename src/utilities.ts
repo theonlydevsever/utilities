@@ -9,6 +9,18 @@ export type PrimitiveType =
 export type ExtendedPrimitiveType = PrimitiveType | "array" | "function" | "object";
 
 /**
+ * Capitalizes a passed string
+ *
+ * @param value The value to capitalize
+ * @returns A capitalized, trimmed copy of the passed value
+ */
+export const capitalize: (value?: string) => string = (value = "") => {
+    const trimmedValue = value.trim();
+
+    return `${trimmedValue.slice(0, 1).toUpperCase()}${trimmedValue.slice(1)}`;
+};
+
+/**
  * Forces a value to become nested inside of an array
  *
  * @param data The data to be converted to an array
