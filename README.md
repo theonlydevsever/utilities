@@ -16,6 +16,27 @@ yarn add @theonlydevsever/utilities
 npm install @theonlydevsever/utilities
 ```
 
+## capitalize
+This function capitalizes the first character in a passed string
+
+| Param | Type | Details | Required |
+| --- | --- | --- | ---
+| value | `string` | The string to capitalize. Defaults to an empty string | `false`  
+
+```js
+import { capitalize } from "@theonlydevsever/utilities";
+
+const x = "dogs";
+const capitalizedX = capitalize(x); // => "Dogs"
+
+const y = "Cats";
+const capitalizedY = capitalize(y); // => "Cats"
+
+// The function will also remove any wrapping whitespace
+const z = "   it's really spacious in here   ";
+const capitalizedZ = capitalize(z); // => "It's really spacious in here"
+```
+
 ## forceArray
 
 Sometimes, when retrieving a list of records from a third-party API, you will be sent back an array of records or a single record.
@@ -24,7 +45,8 @@ To help standardize workflow in your applications, this function forces the retu
 
 | Param | Type | Details | Required |
 | --- | --- | --- | ---
-| data | `Generic \| Generic[]` | A single value or an array of values | `true`
+| data | `Generic \| Generic[]` | A single value or an array of values | `true`  
+
 
 ```js
 import { forceArray } from "@theonlydevsever/utilities";
@@ -45,7 +67,8 @@ This is useful for standardizing input going in and coming out of a system, as w
 | Param | Type | Details | Required |
 | --- | --- | --- | ---
 | value | `unknown` | This value can be anything | `true`
-| type | `ExtendedPrimitiveType` | Can be one of:<ul><li><code>array</code></li><li><code>bigint</code></li><li><code>boolean</code></li><li><code>function</code></li><li><code>null</code></li><li><code>number</code></li><li><code>object</code></li><li><code>string</code></li><li><code>symbol</code></li><li><code>undefined</code></li></ul> | `true`
+| type | `ExtendedPrimitiveType` | Can be one of:<ul><li><code>array</code></li><li><code>bigint</code></li><li><code>boolean</code></li><li><code>function</code></li><li><code>null</code></li><li><code>number</code></li><li><code>object</code></li><li><code>string</code></li><li><code>symbol</code></li><li><code>undefined</code></li></ul> | `true`  
+
 
 ```js
 import { isValueOfType } from "@theonlydevsever/utilities";
