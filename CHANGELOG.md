@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v1.8.2
+
 ## v1.8.1
 - Add new Prettier configuration &mdash; [@theonlydevsever/prettier](https://www.npmjs.com/package/@theonlydevsever/prettier)
 
