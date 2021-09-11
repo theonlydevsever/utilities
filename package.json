@@ -18,6 +18,7 @@
     "util",
     "utility"
   ],
+  "prettier": "@theonlydevsever/prettier",
   "scripts": {
     "build": "tsc",
     "check:code": "concurrently -n Linter,Prettier,Jest -c magenta,green,blue \"yarn lint\" \"yarn prettier\"",
@@ -27,13 +28,14 @@
     "husky:commit": "yarn check:code && yarn test && yarn build",
     "husky:push": "yarn check:code && yarn test && yarn build",
     "lint": "eslint . && echo \"\n\nLint Complete - S'all Good Man!\n\n\" ",
-    "prettier": "prettier --config ./prettier.config.js --check \"./src/*\"",
+    "prettier": "prettier --check \"./src/*\"",
     "test": "jest --verbose",
     "test:coverage": "jest --verbose --coverage",
     "test:watch": "jest --verbose --watch",
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@theonlydevsever/prettier": "^1.0.0",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
@@ -47,7 +49,7 @@
     "jest": "^27.0.6",
     "jest-chain": "^1.1.5",
     "jest-extended": "^0.11.5",
-    "prettier": "^2.3.2",
+    "prettier": "^2.4.0",
     "ts-jest": "^27.0.5",
     "tsc": "^2.0.3",
     "typedoc": "^0.21.6",
