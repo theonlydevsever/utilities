@@ -18,6 +18,11 @@
     "util",
     "utility"
   ],
+  "eslintConfig": {
+    "extends": [
+      "@theonlydevsever"
+    ]
+  },
   "prettier": "@theonlydevsever/prettier",
   "scripts": {
     "build": "tsc",
@@ -35,16 +40,22 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@theonlydevsever/eslint-config": "^1.0.0",
     "@theonlydevsever/prettier": "^1.0.0",
     "@types/jest": "^27.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.29.2",
-    "@typescript-eslint/parser": "^4.29.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "concurrently": "^6.2.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-jest-extended": "^0.0.1",
-    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.0",
     "jest": "^27.0.6",
     "jest-chain": "^1.1.5",
