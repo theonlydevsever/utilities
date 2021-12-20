@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v1.8.4
+
 ## v1.8.3
 
 -   Fix bug where empty strings would return false before type checking
