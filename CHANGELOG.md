@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v1.8.3
+
 ## v1.8.2
 
 -   Add new ESLint configuration &mdash; [@theonlydevsever/eslint-config](https://www.npmjs.com/package/@theonlydevsever/eslint-config)
