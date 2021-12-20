@@ -49,7 +49,8 @@ export const isValueOfType: (value: unknown, type: ExtendedPrimitiveType) => boo
     value,
     type
 ) => {
-    if (type && type !== "null" && type !== "undefined" && !value) return false;
+    if (type && type !== "null" && type !== "undefined" && type !== "string" && !value)
+        return false;
 
     switch (type) {
         case "array":
