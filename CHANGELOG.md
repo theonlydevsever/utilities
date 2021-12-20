@@ -2,6 +2,8 @@
 
 ## v1.8.4
 
+-   Fix bug where falsey number values will return false
+
 ## v1.8.3
 
 -   Fix bug where empty strings would return false before type checking
