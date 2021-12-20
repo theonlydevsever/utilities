@@ -2,6 +2,8 @@
 
 ## v1.8.3
 
+-   Fix bug where empty strings would return false before type checking
+
 ## v1.8.2
 
 -   Add new ESLint configuration &mdash; [@theonlydevsever/eslint-config](https://www.npmjs.com/package/@theonlydevsever/eslint-config)
