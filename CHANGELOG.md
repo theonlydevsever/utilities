@@ -2,6 +2,8 @@
 
 ## v1.9.0
 
+-   Add `date` type checking to `isValueOfType`
+
 ## v1.8.4
 
 -   Fix bug where falsey number values will return false

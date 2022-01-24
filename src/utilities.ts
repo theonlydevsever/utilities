@@ -6,7 +6,7 @@ export type PrimitiveType =
     | "string"
     | "symbol"
     | "undefined";
-export type ExtendedPrimitiveType = PrimitiveType | "array" | "function" | "object";
+export type ExtendedPrimitiveType = PrimitiveType | "array" | "date" | "function" | "object";
 
 /**
  * Capitalizes a passed string
@@ -67,6 +67,11 @@ export const isValueOfType: (value: unknown, type: ExtendedPrimitiveType) => boo
             return typeof value === "bigint";
         case "boolean":
             return typeof value === "boolean";
+        case "date":
+            return (
+                typeof (value as Date).getMonth === "function" &&
+                !isNaN(new Date(String(value)).getTime())
+            );
         case "function":
             return typeof value === "function";
         case "null":

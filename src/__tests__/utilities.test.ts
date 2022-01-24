@@ -49,6 +49,7 @@ describe("Utilities Testing", () => {
             "array",
             "bigint",
             "boolean",
+            "date",
             "function",
             "null",
             "number",
@@ -138,6 +139,34 @@ describe("Utilities Testing", () => {
                 expect(isValueOfType(true, "boolean")).toEqual(true);
             });
         }); // close describe("boolean")
+
+        describe("date", () => {
+            test("returns 'false' when a date is expected, but the value is not a date", () => {
+                const values = [
+                    [1, 2, 3],
+                    BigInt(12),
+                    () => ({ id: 1 }),
+                    12,
+                    {},
+                    "Hello",
+                    Symbol(123),
+                    456,
+                    true,
+                    new Date("I am a date"),
+                    "2021-09-14"
+                ];
+
+                expect(
+                    isValueOfType(values[Math.floor(Math.random() * values.length)], "date")
+                ).toEqual(false);
+            });
+
+            test("returns 'true' when a date is expected and the value is a date", () => {
+                expect(isValueOfType(new Date("1992-09-14"), "date")).toEqual(true);
+                expect(isValueOfType(new Date(12), "date")).toEqual(true);
+                expect(isValueOfType(new Date(1, 1, 1), "date")).toEqual(true);
+            });
+        });
 
         describe("function", () => {
             test("return 'false' when a function is expected, but the value is not a function", () => {
