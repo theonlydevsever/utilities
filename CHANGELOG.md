@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v1.9.0
+
 ## v1.8.4
 
 -   Fix bug where falsey number values will return false
